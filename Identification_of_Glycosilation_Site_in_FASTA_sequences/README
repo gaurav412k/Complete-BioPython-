@@ -1,0 +1,14 @@
+Identification of Glycosylation Sites in FASTA Sequences
+Introduction
+Proteins can undergo post-translational modifications, one of which is glycosylation. Glycosylation involves the attachment of glycans to specific amino acid side chains. This process is critical for various biological functions, including protein folding, stability, and cell signaling.
+
+Glycosylation can be categorized into two main types: N-glycosylation and O-glycosylation. This project focuses on identifying N-glycosylation sites in many protein sequences obtained from FASTA files.
+
+N-glycosylation occurs at asparagine (Asn) residues within a consensus sequence: Asn-Xxx-Ser/Thr/Cys, where "Xxx" can be any amino acid except proline. This project aims to develop a Python script to identify these glycosylation sites in protein sequences and compile the results into a structured dataset.
+
+Methodology
+Input Data: The input data consists of protein sequences in a FASTA file format.
+Sequence Processing: Each sequence is processed to identify glycosylation sites.
+Regex for Glycosylation Sites: A regular expression detects the N-glycosylation consensus sequence.
+Data Extraction: For each sequence, the script extracts relevant metadata, including the EPI ID, year of isolation, and the EPI_ISL identifier.
+Output: The results are compiled into a pandas DataFrame and saved to a CSV file.
